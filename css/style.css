@@ -1,0 +1,596 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.swiper-container {
+  /*滑動頁面*/
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  /*滑動頁面*/
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: flex-start;
+}
+
+.g5 {
+  /*江紀武*/
+  padding-top: 200px;
+  display: block;
+  width: 100%;
+  margin-top: 220px;
+}
+
+.begin {
+  /*第一頁*/
+  align-items: flex-start;
+}
+
+.center {
+  /*其魚頁*/
+  align-items: center;
+}
+
+.logo {
+  margin-top: 250px;
+}
+
+.first {
+  margin-top: 50px;
+}
+
+.title {
+  height: auto;
+  width: auto;
+}
+
+/*.title:hover
+{
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+}*/
+
+.title a {
+  color: #fff;
+  font-family: "微軟正黑體";
+  font-size: 60px;
+}
+
+.title p {
+  color: #fff;
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+.btn {
+  /*按鈕*/
+  margin: 0 auto;
+  letter-spacing: 2px;
+  border: 1px solid #fff;
+  padding: 1.0em;
+  width: 140px;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-top: 30px;
+}
+
+.btn a {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 200px;
+  font-size: 60px;
+  height: 300px;
+  width: 100%;
+  background-color: rgb(45, 50, 29);
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.footer a {
+  margin-left: 0px;
+  font-family: "Microsoft Sans Serif";
+  font-size: 20px;
+  text-align: center;
+}
+
+.title :hover {
+  background-color: rgba(0, 0, 0, 0.83);
+  opacity: 0.6;
+}
+
+.btn:hover {
+  opacity: 0.3;
+}
+
+.logo2 img {
+  height: 80px;
+  weight: 100px;
+}
+
+.logo2 {
+  margin-top: 5px;
+  margin-left: 30px;
+  float: left;
+}
+
+.icon
+{
+  margin-top: 10px;
+  float: right;
+  width: 64px;
+  height:auto;
+  margin-right: 30px;
+}
+
+.icon a
+{
+  margin: 0px;
+}
+
+.icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.icon :hover
+{
+  transition: 1s;
+  transform: rotate(360deg);
+  transform-origin: 0 5;
+  width:60px;
+  height:60px;
+}
+.hambuger_menu
+{
+  position:absolute;
+  top:0px;
+  left: 0px;
+  margin:5px 0px 0px 5px ;
+  display: inline-block;
+  height: 55px;
+  width: 60px;
+}
+.hambuger_menu_icon
+{
+  background-color:rgb(36, 180, 100);
+  width: 50px;
+  height: 5px;
+  margin:10px;
+  display: block;
+}
+.hambuger_menu:hover .hambuger_menu_icon
+{
+  transition: 1s;
+  transform: rotate(180deg);
+  transform-origin: 0 15;
+}
+
+
+@media screen and (max-width:1050px) {
+/*1050以下*/
+.footer
+{
+  margin-top: 100px;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+  /*769-1024*/
+ .footer
+{
+  padding-top: 50px;
+  height:220px;
+  margin-top: 0px;
+}
+.footer a
+{
+  font-size: 35px;
+}
+.icon
+{
+  margin-top: -10px;
+  width:96px;
+}
+.logo2
+{
+  margin-top: -20px;
+}
+.icon img
+{
+  width:96px;
+  height: 96px;
+}
+.icon :hover
+{
+  width:96px;
+  height:96px;
+}
+.logo2 img
+{
+  width:200px;
+  height: 100px;
+}
+.title a {
+  font-size: 80px;
+}
+
+.title p {
+  font-size: 40px;
+}
+.g5
+{
+  padding-top: 0px;
+}
+.title3
+{
+  margin-top:0px;
+}
+.btn {
+  margin: 0 auto;
+  border: 1px solid #fff;
+  padding: 40px;
+  width: 440px;
+  cursor: pointer;
+  margin-top: 80%;
+}
+.btn a
+{
+  font-family: "微軟正黑體";
+  font-size: 40px;
+}
+.btn3
+{
+  margin-top: 480px;
+  margin-bottom: 200px;
+}
+.hambuger_menu
+{
+  height:70px;
+  width: 100px;
+}
+.hambuger_menu_icon
+{
+  height:10px;
+  width:80px;
+}
+}
+
+@media screen and (max-width:768px) and (min-width:481px){
+/*481-768*/
+.footer
+{
+  margin-top: 150px;
+}
+.icon
+{
+  margin-top: 20px;
+  width:64px;
+}
+.icon img
+{
+  width:64px;
+  height: 64px;
+}
+.icon :hover
+{
+  width:64px;
+  height:64px;
+}
+.g5
+{
+  padding-top: 100px;
+}
+.title p {
+  font-size: 30px;
+}
+.btn {
+  padding: 40px;
+  width: 340px;
+  margin-top: 80%;
+}
+.btn a
+{
+  font-family: "微軟正黑體";
+  font-size: 30px;
+}
+.btn3
+{
+  margin-top:300px;
+  margin-bottom: 0px;
+}
+.hambuger_menu
+{
+  height:64px;
+  width: 80px;
+}
+.hambuger_menu_icon
+{
+  height:8px;
+  width:60px;
+}
+}
+
+@media screen and (max-width:480px) and (min-width:400px)
+{
+/*400-480*/
+.logo
+{
+  margin-top: 125px;
+}
+.logo img
+{
+  width: 360px;
+}
+.title a
+{
+  font-size: 30px;
+}
+.title p
+{
+
+}
+
+.btn {
+  padding: 20px;
+  width: 180px;
+  margin-top: 80%;
+}
+.btn3
+{
+  margin-top:270px;
+  margin-bottom: 30px;
+}
+.btn a
+{
+  font-family: "微軟正黑體";
+  font-size: 20px;
+}
+.g5
+{
+  margin-top: 150px;
+  padding-top: 0px;
+}
+.logo2
+{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.logo2 img
+{
+  width: 100px;
+  height:50px;
+}
+.icon
+{
+  width:32px;
+  height:32px;
+  margin-right: 15px;
+}
+.icon img
+{
+  width:32px;
+  height: 32px;
+}
+.icon :hover
+{
+  width:32px;
+  height:32px;
+}
+.footer
+{
+  height: 120px;
+  margin-top: 50px;
+  padding:0px;
+}
+.footer a
+{
+  font-size: 15px;
+}
+.hambuger_menu_icon
+{
+  height:3px;
+
+}
+
+}
+
+@media screen and  (max-width:400px)
+/*400以下*/
+{
+  .logo
+  {
+    margin-top: 125px;
+  }
+  .logo img
+  {
+    width: 250px;
+  }
+  .title a
+  {
+    font-size: 28px;
+  }
+  .title p
+  {
+
+  }
+  .btn {
+    padding: 15px;
+    width: 100px;
+    margin-top: 80%;
+  }
+  .btn3
+  {
+    margin-top:240px;
+    margin-bottom: 50px;
+  }
+  .btn a
+  {
+    font-family: "微軟正黑體";
+    font-size: 15px;
+  }
+  .g5
+  {
+    margin-top: 150px;
+    padding-top: 0px;
+  }
+  .logo2
+  {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .logo2 img
+  {
+    width: 100px;
+    height:50px;
+  }
+  .icon
+  {
+    width:32px;
+    height:32px;
+    margin-right: 15px;
+  }
+  .icon img
+  {
+    width:32px;
+    height: 32px;
+  }
+  .icon :hover
+  {
+    width:32px;
+    height:32px;
+  }
+  .footer
+  {
+    height: 120px;
+    margin-top: 0px;
+    padding:0px;
+  }
+  .footer a
+  {
+    font-size: 15px;
+  }
+  .hambuger_menu_icon
+  {
+    height:3px;
+    width:40px;
+  }
+}
+
+
+@media screen and  (max-width:320px)
+/*400以下*/
+{
+  .logo
+  {
+    margin-top: 125px;
+  }
+  .logo img
+  {
+    width: 250px;
+  }
+  .title a
+  {
+    font-size: 28px;
+  }
+  .title p
+  {
+
+  }
+  .btn {
+    padding: 15px;
+    width: 100px;
+    margin-top: 80%;
+  }
+  .btn3
+  {
+    margin-top:230px;
+    margin-bottom: 0px;
+  }
+  .title3
+  {
+    margin-top: -50px;
+
+  }
+  .btn a
+  {
+    font-family: "微軟正黑體";
+    font-size: 15px;
+  }
+  .g5
+  {
+    margin-top: 150px;
+    padding-top: 0px;
+  }
+  .logo2
+  {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .logo2 img
+  {
+    width: 80px;
+    height:40px;
+  }
+  .icon
+  {
+    width:32px;
+    height:32px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .icon img
+  {
+    width:32px;
+    height: 32px;
+  }
+  .icon :hover
+  {
+    width:32px;
+    height:32px;
+  }
+  .footer
+  {
+    height: 80px;
+    margin-top: 30px;
+    padding:0px;
+
+  }
+  .footer a
+  {
+    font-size: 12px;
+  }
+  .hambuger_menu_icon
+  {
+    height:3px;
+    width:40px;
+  }
+}

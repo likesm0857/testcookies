@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>firebase chat</title>
+    <link rel="stylesheet"
+    href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+    type="text/css">
+
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <script src="js/jquery-3.2.1.min.js"> </script>
+
+  <script src="js/script.js"> </script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="css/default.css" />
+      <link rel="stylesheet" type="text/css" href="css/component.css" />
+      <script src="js/classie.js"></script>
+</head>
+<body class="cbp-spmenu-push" >
+  <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+    <h3 >A2 ALARM </h3>
+    <a href="index.html">回首頁</a>
+    <a href="#">空汙的真相</a>
+    <a href="#">認識台灣空汙地區</a>
+    <a href="./member_signup/member_signup.html">加入我們</a>
+    <a href="./member/member_sign.html">會員登入</a>
+  </nav>
+
+    <div class="uu"></div>
+    <div class="row" id="cbpspmenupush">
+      <div class="col s12 ">
+        <div class="container blue-grey lighten-4">
+                <div class="card-panel green darken-3">
+                  <span class="white-text text-white"><h5 id="showLeftPush" >建立你的環保小園地</h5></span>
+                </div>
+
+        <div class="row">
+
+          <div class="input-field col s7">
+            <input id="email" type="email" class="validate">
+            <label for="text" data-error="格式輸入錯誤" data-success="格式輸入正確">請輸入電子信箱</label>
+            <h id= noemail></h>
+            </div>
+
+        </div>
+
+        <div class="row">
+          <div class="input-field col s7">
+            <input id="password" type="password" class="validate">
+            <label for="password">密碼</label>
+              <h id= nopassword></h>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s7">
+            <input id="passwordcheck" type="password" class="validate">
+            <label for="password">再次確認密碼</label>
+            <h id="passwordcheckid"></h>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col s7">
+
+            <div class="input-field inline">
+              <h id= state></h>
+              <input id="check" type="text" class="validate">
+
+              <label for="text">請輸入驗證碼</label>
+
+              <a href="#"><img src="./img/chech.JPG" width="100" height="50"></a>
+
+            </div>
+          </div>
+        </div>
+
+
+            <div class ="button" >
+            <a class="waves-effect waves-light btn" type="submit" name="註冊" id ="btnSignUp">送出</a>
+            <div class="checkimg"></div>
+            </div>
+              <div class="u2"></div>
+      </form>
+    </div>
+</div>
+</div>
+      <footer class="page-footer green darken-3">
+                <div class="container">
+                  <div class="row">
+                    <div class="col l6 s12">
+                      <h5 class="white-text">A2 Alarm</h5>
+                      <p class="grey-text text-lighten-4">說明    隱私權     條款</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="footer-copyright">
+                  <div class="container2">
+                  © 2016 Copyright Text
+
+                  </div>
+                </div>
+              </footer>
+</body>
