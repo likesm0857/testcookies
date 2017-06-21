@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <title>A2 ALARM | Taiwan Pollution</title>
+
+  <!-- Roboto Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <!-- animate -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <!-- jQuery/bootstrap -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <!-- CSS bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Custom JS -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <!-- 漢堡選單 -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index/index.html">
+          <img src="img/LOGO.png" alt="A2 ALARM">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse rwd_background" id="bs-example-navbar-collapse-1">
+        <a href="#"><img class="nav-button" id="btn1" src="img/button_north.png" alt="north"></a>
+        <a href="#"><img class="nav-button" id="btn2" src="img/button_mid.png" alt="mid"></a>
+        <!-- <a href="#"><img class="nav-button" src="img/button_south.png" alt="south"></a> -->
+        <a href="#"><img class="nav-button" id="btn3" src="img/button_factory.png" alt="south"></a>
+
+        <ul class="nav navbar-nav navbar-right rwd_menu">
+          <ul class="nav navbar-nav navbar-right rwd_menu">
+            <li><a id="loginOut" href="#">登出</a></li>
+            <li><a id="joinUs" href="#">加入我們</a></li>
+            <li><a id="welcome" href="#">會員登入</a></li>
+          </ul>
+        </ul>
+        <ul class="nav navbar-nav navbar-right menu">
+          <li><a class="menu_cotain no_img" href="../index/index.html"><img src="img/menu_icon.png" alt="">回到首頁</a></li>
+          <li><a class="menu_cotain" href="../貝WEB/pollution_taipei.html"><img src="img/button_north.png" alt="">汽機車汙染</a></li>
+          <li><a class="menu_cotain" href="../貝WEB/pollution_taichung.html"><img src="img/button_mid.png" alt="">火力發電廠</a></li>
+          <li><a class="menu_cotain" href="../貝WEB/pollution_yunlin.html"><img src="img/button_mid.png" alt="">六輕工業區</a></li>
+          <li><a class="menu_cotain" href="../貝WEB/pollution_kaohsiung1.html"><img src="img/button_south.png" alt="">小港工業區</a></li>
+          <li><a class="menu_cotain" href="../貝WEB/pollution_kaohsiung2.html"><img src="img/button_south.png" alt="">仁武工業區</a></li>
+          <li id="joinUsRWD"><a class="menu_cotain no_img" href="../index/member_signup/member_signup.html"><img src="img/menu_icon.png" alt="">加入我們</a></li>
+          <li><a id="welcomeRWD" class="menu_cotain no_img" href="#"><img src="img/menu_icon.png" alt="">會員登入</a></li>
+          <li id="loginOutRWD"><a class="menu_cotain no_img" href="#"><img src="img/menu_icon.png" alt="">登出</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+      <div class="collapse navbar-collapse navbar-pollution">
+        <a href="#">汽機車汙染</a>
+        <a href="#">發電廠汙染</a>
+        <a href="#">工業區汙染</a>
+      </div>
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="article">
+      <div class="header">
+        <h1>認識台灣空汙地區</h1>
+      </div>
+      <div class="taiwan">
+        <img src="img/taiwan.svg" alt="taiwan-map">
+        <a href="../貝WEB/pollution_taipei.html">
+          <div class="block1">
+            <div class="car">
+              <img src="img/blue_car.png">
+            </div>
+            <!-- <div class="introduce_card1">
+                <p>汽機車汙染</p>
+            </div> -->
+          </div>
+        </a>
+        <a href="../貝WEB/pollution_taichung.html">
+          <div class="block2">
+            <div class="fire_factory">
+              <div class="smoke">
+                <img src="img/smoke.png">
+              </div>
+              <div class="factory">
+                <img src="img/factory2.png">
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="../貝WEB/pollution_yunlin.html">
+          <div class="block3">
+            <div class="six">
+              <div class="smoke2">
+                <img src="img/smoke2.png">
+              </div>
+              <div class="favtory3">
+                <img src="img/heavy.png">
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="../貝WEB/pollution_kaohsiung1.html">
+          <div class="block4">
+            <div class="heavy">
+              <div class="smoke2">
+                <img src="img/smoke2.png">
+              </div>
+              <div class="favtory3">
+                <img src="img/heavy.png">
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <!-- container -->
+
+  <footer>
+    <p> © copyright 2016 </p>
+    <div class="icon">
+      <a href="#"><img src="img/btn_fb.png"></a>
+      <a href="#"><img src="img/btn_tw.png"></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
